@@ -160,7 +160,7 @@ section{
 }
 .services .serv-content .card{
     width: calc(33% -20px);
-    background:#00bcd4;
+    background:rgb(82, 124, 202);
     text-align: center;
     border-radius: 6px;
     padding: 20px 25px;
