@@ -1,35 +1,42 @@
 <html>
 <head>
-    <title>making potfolio</title>
+    <title>My portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width-device-width,initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>making  a portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!--a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();"></a--->
+    <title>My portfolio</title>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js"></script><!---you can find this link on www.jquery.com-->
 </head>        
 <body>
     <nav class="navbar">
         <div class="max-width">
             <div class="logo"><a href="#">Portfo<span>lio</span></a></div>
             <ul class="Menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Services</a></li>
-                <!--li><a href="#">Team</a></li-->
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
     </nav>
     <section class="home" id="home">
         <div class="home-content">
             <div class="text-1">Hello,my name is</div>
             <div class="text-2">Aman verma</div>
-            <div class="text-3">And I'm a <span>Student</span></div>
+            <div class="text-3">And I'm <span class="typing"></span></div>
             <a href="#">Hire me</a>
             
         </div>
     </section>
+
     <!------------------------------------ about section start--------------------------------------------->
     <section class="about" id="about">
         <div class="max-width">
@@ -39,21 +46,19 @@
                     <img src="../img3.jpg" alt="">
                 </div>
                 <div class="column right">
-                    <div class="text1">I'm aman verma and I'm a <span>student.</span></div>
-                    <p>I'm basical from utter pradesh but 
-                        i am curreently staying in mumbai and i belong
-                        to a nuclear family.and also i did my graduation
-                        in bscit from rj college with aggregate cgpa 7.33
-                        and i also done python courses on coursera.my strong
-                        language is Html,CSS,python,js and my final year project was online
-                         web application where i used four language for front end i
-                        use html,css,js and for a backend i use php/mysql.my strength
-                         are i am self motivated and hardworking person and my short term
-                        goal is to get job in a reputed company and long term goal is to
-                        achieve a good position where i can build my career and my hobbies
-                        is playing cricket,online game,watching movies.<br>
-                        that is all about me,thank you.</p>
-                    <a href="../aman verma/Aman resume.docx">Download CV</a>
+                    <div class="text1">My name is aman verma and I'm a <span class="typing-1"></span></div>
+                    <p>i'm from mumbai and i have completed my graduation
+                        in BSCIT  from Ramniranjan jhunjhunwala college with aggregate cgpa 7.33 
+                        and my final year project was online web application using html ,css, js and php.
+                        Currently i'm working in infosys as Software Quality Assurance and 
+                        also i'm working on Oracle peoplesoft project
+                        i have completed Agile devlopment certification and many more and 
+                        also i have good knowledge of web development and also i can design website
+                        using wordpress and i belong to nuclear family and my hobbies are playing cricket
+                        ,study,watching movies,playing online games.<br>
+                        That is all about me,thank you.</p>
+                    <a href="Aman resume.docx">Download CV</a>
+                </div>
             </div>
         </div>
     </section>            
@@ -64,15 +69,9 @@
             <div class="skills-content">
                 <div class="column left">
                     <div class="text">My creative skills and experience.</div>
-                    <p>I'm basical from utter pradesh but 
-                        i am curreently staying in mumbai and i belong
-                        to a nuclear family.and also i did my graduation
-                        in bscit from rj college with aggregate cgpa 7.33
-                        and i also done python courses on coursera.my strong
-                        language is Html,CSS,python,js and my final year project was online
-                         web application where i used four language for front end i
-                        use html,css,js and for a backend i use php/mysql.<br>
-                        that is all about me,thank you.
+                    <p>I can design a responsive website using my skills and i have a good knowledge of Ui/Ux  web design and also
+                     i can design website using wordpress and i have 1+ years of experience in software quality assurance on OnBase
+                     application at infosys and i'm also working on oracle peoplesoft project.<br>
                     </p>
                     <a href="">Read more</a>
                 </div>
@@ -110,86 +109,94 @@
         </div>
     </section>
     <!---------------------service section start------------------------------------------------>
-    <section class="service" id="service">
+    <section class="services" id="services">
         <div class="max-width">
             <h2 class="title"> My Services</h2>
-            <div class="service-content">
+            <div class="serv-content">
                 <div class="card">
-                    <div class="Box">
-                        <i class="fas fa-point-brush"></i>
-                        <div class="text">Web Design</div>
-                        <p>I can design attractive website using my skills</p>
+                    <div class="box">
+                        <i class="fas fa-paint-brush"></i>
+                        <div class="text">Frontend developer</div>
+                        <p>I can design responsive website using my skills(html,css,js) and also i can design website using wordpress.</p>
                     </div>
                 </div>
                 <div class="card">
-                    <div class="Box">
-                        <i class="fas fa-chart-brush"></i>
-                        <div class="text">Graphic design using unity</div>
-                        <p>I have more than 5 month of experience in graphic design using unity.</p>
+                    <div class="box">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="text">Software Quality Assurance</div>
+                        <p>I'm working as Software Quality Assurance in infosys and 
+                            i have  1+ year of experience on OnBase Application and 
+                            i also working on Oracle peoplesoft project.</p>
                     </div>
                 </div>
                 <div class="card">
-                    <div class="Box">
+                <div class="box">
                     <i class="fas fa-code"></i>
-                    <div class="text">Wordpress</div>
-                    <p>I can design any website using wordpress.</p>
-                    </div>
+                    <div class="text">Graphic design</div>
+                    <p>I can design simple game and graphics using unity.</p>
+                </div>
                 </div>
             </div>
-
         </div>
-    
     </section>
     <!---------------------------contact section start------------------------------------------->
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="content">
             <h2>Contact me</h2>
-            <p> IF IS THERE ANY QUERRY, PLEASE SEND ME YOUR MASSAGE</p>
-         </div>
-            <div class="container">   
+            <p> Do you have any questions? Please do not hesitate to contact us directly. i will come back to you within a matter of hours to help you.</p>
+        </div>
+        <div class="container">
             <div class="contactInfo">
             <div class="box">
             <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div><!--this code is referenced from fontawesome 4.7-->
             <div class="text">
                 <h3>Address</h3>
-                <p>P.Y THORAT MARG RAMABAI COLONY,<br>RAJARAM SALWE CHAWL,<br>CHEMBUR(400089)</p>
+                <p>P.Y Thorat marg ramabai colony,<br>rajaram salwe chawl near sidharth residency,<br>chembur(400089)</p>
+            </div>
+            </div>
+            <div class="box">
+                <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i>
                 </div>
-           </div>
-           <div class="box">
-               <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i>
-               </div>
-               <div class="text">
+                <div class="text">
                    <h3>Phone-no</h3>
                    <p>9137738368</p>
                    </div>
-              </div> 
-        <div class="box">
-           <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i>
-           </div>
-           <div class="text">
-               <h3>Email-id</h3>
-               <p>amanverma1280@gmail.com</p>
-               <p>vaman202199@gmail.com</p>
-               </div>
-          </div>
-      </div>
-    <div class="contactform">
-        <h2>SEND MASSAGE</h2>
-        <div class="inputBox">
-            <input type="text" name="" required="required">
-            <span>NAME</span>
-       </div>
-       <div class="inputBox">
-           <input type="text" name="" required="required">
-           <span>EMAIL-ID</span>
-      </div>
-      <div class="inputBox">
-       <textarea required="required"></textarea>
-       <span>TYPE YOUR COMMENT HERE....</span>
-   </div>
-   <div class="inputBox">
-       <input type="submit" value="send" required="required">
-   </div>
-   </section>
+                </div> 
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i>
+                </div>
+                <div class="text">
+                    <h3>Email-id</h3>
+                    <p>amanverma1280@gmail.com</p>
+                    <p>vaman202199@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="contactform">
+            <h2>SEND MASSAGE</h2>
+            <!--- also find thr video link  for refrence: https://youtu.be/0X0kovjzLrw-->
+            <!----All the data will store in this link: https://formspree.io/forms/meqwjdga/submissions-->
+            <form action="https://formspree.io/f/meqwjdga" method="POST"><!----You can find this link on formspree.com and get your account verified that's it-->
+            <div class="inputBox">
+                <input type="text" name="Name" required="required">
+                <span>NAME</span>
+            </div>
+            <div class="inputBox">
+                <input type="text" name="Email" required="required">
+                <span>EMAIL-ID</span>
+            </div>
+            <div class="inputBox">
+                <textarea name="Message" required="required"></textarea>
+                <span>TYPE YOUR COMMENT HERE....</span>
+            </div>
+            <div class="inputBox">
+                <input type="submit" value="send" required="required">
+            </div>
+            </form>
+        </div>
+        </div>
+
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>
